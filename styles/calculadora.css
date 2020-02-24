@@ -1,0 +1,136 @@
+/* Global */
+
+body{
+  background: radial-gradient(
+    circle,
+    rgb(255, 255, 255),
+    rgb(180, 192, 195),
+    rgb(12, 95, 60)
+  );
+}
+
+/* Header */
+
+header {
+  width: 20%;
+  background-color: rgb(187, 34, 34);
+  margin: auto;
+  margin-top: 40px;
+  padding: 8px;
+  border-top-left-radius: 19px;
+  border-top-right-radius: 19px;
+  border: 3px solid rgb(104, 20, 20);
+}
+
+header h1 {
+  color: white;
+  font-size: 1.5rem;
+  font-family: monospace;
+  text-align: center;
+}
+
+/* Calculadora */
+
+.Calculadora {
+  width: 30%;
+  height: 300px;
+  border-radius: 19px;
+  background-color: gray;
+  border: 2px solid rgb(61, 58, 58);
+  margin: auto;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(6, 1fr);
+  grid-gap: 10px;
+  grid-template-areas:
+    "input input input input"
+    "reset back potencia suma "
+    "siete ocho nueve resta"
+    "cuatro cinco seis multi"
+    "uno dos tres division"
+    "cero punto igual igual";
+}
+
+#resultado {
+  grid-area: input;
+  background-color: rgb(255, 255, 255);
+  border-radius: 5px;
+  padding: 10px;
+  height: 40px;
+  font: bold 1.7rem monospace;
+  text-align: right;
+  line-height: 40px;
+  box-shadow: 0px 5px 0px rgb(98, 94, 90);
+}
+
+#reset {
+  background-color: red;
+  color: white;
+  grid-area: reset;
+}
+
+#back {
+  background-color: red;
+  color: white;
+  grid-area: back;
+}
+
+#potencia {
+  grid-area: potencia;
+}
+
+#suma {
+  grid-area: suma;
+}
+
+#resta {
+  grid-area: resta;
+}
+
+#division {
+  grid-area: division;
+}
+
+#multiplicacion {
+  grid-area: multi;
+}
+
+#cero {
+  grid-area: cero;
+}
+
+#punto {
+  grid-area: punto;
+}
+
+#igual {
+  grid-area: igual;
+}
+
+
+
+/* Botones */
+
+button {
+  border: none;
+  border-radius: 5px;
+  font: bolder 1.5rem monospace;
+  box-shadow: 0px 5px 0px rgb(98, 94, 90);
+  transition: all ease 0.3s;
+}
+
+#suma,
+#resta,
+#multiplicacion,
+#division,
+#potencia {
+  background-color: rgb(48, 102, 153);
+  color: white;
+}
+
+#igual {
+  background-color: rgb(206, 191, 61);
+  color: white;
+}
+
