@@ -130,7 +130,7 @@ function operando() {
     return parseFloat(resultado.innerHTML);
   } else if (resultado.innerHTML.includes("/") === true) {
     let array = resultado.innerHTML.split("/", 2);
-    resultado.innerHTML = parseInt(array[0]) / parseInt(array[1]);
+    resultado.innerHTML = parseFloat(array[0]) / parseFloat(array[1]);
 
     return parseFloat(resultado.innerHTML);
   } else if (resultado.innerHTML.includes("^") === true) {
