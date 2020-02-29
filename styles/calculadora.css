@@ -134,3 +134,17 @@ button {
   color: white;
 }
 
+/* Footer */
+
+footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.418);
+  color: white;
+  font:bolder 1rem  monospace;
+  text-align: center;
+  line-height: 1.7rem;
+  height:1.7rem;
+}
